@@ -1,5 +1,7 @@
 # Group Album Photo Uploader for Vkontakte
 
+![Tested with Python 3.11.0](https://img.shields.io/badge/tested%20with-Python%203.11.0-brightgreen)
+
 This Python script is designed to upload photos from a specified directory to a VK album using the VK API.
 
 
