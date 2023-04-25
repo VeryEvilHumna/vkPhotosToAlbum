@@ -62,16 +62,7 @@ async def upload_photos():
 
 ####### # Exceptions handling
         except exceptions.VkAPIError as e:
-            if e.code == 14:
-                print(f'Error: Upload limit reached for album {ALBUM_ID} in group {GROUP_ID}.')
-                break
-
-            elif e.code == 29:
-                print(f'Error: Rate limit reached for uploading photos to album {ALBUM_ID} in group {GROUP_ID}.')
-                await asyncio.sleep(60)
-
-            else:
-                print(f'Error {e.code}: {e}')
+            print(f'Error {e.code}: {e}')
 
 
 
